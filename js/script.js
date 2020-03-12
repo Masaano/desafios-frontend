@@ -25,7 +25,7 @@ function randomColorApi() {
       .catch((error) => console.log("error"));
   }
 
-function movimenta(){
+async function movimenta(){
     var logo = document.getElementById('logo')
     y+=yAd;
     x+=xAd;
@@ -33,8 +33,10 @@ function movimenta(){
     logo.style.left = x + "px";
     if(y>=maxHeight || y<=0){
         yAd *= -1;
+        logo.style.fill = await randomColorApi();
     } 
     if(x>=maxWidth || x<=0){
         xAd *= -1;
+        logo.style.fill = await randomColorApi();
     }
 }
