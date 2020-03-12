@@ -8,7 +8,7 @@ var yMov = vel;
 
 
 function randomColorApi() {
-    return fetch("/api/cores.json") 
+    return fetch("./api/cores.json") 
       .then(function (response){ //Request pra api
           return response.json() 
       })
