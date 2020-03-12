@@ -5,6 +5,8 @@ body{
     margin: 0;
 }
 #logo{
+    top: 1px;
+    left: 1px;
     position: relative;
     fill: blue;
 }
